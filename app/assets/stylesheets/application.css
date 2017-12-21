@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+ .post{
+ 	border: 1px solid gray;
+ 	margin-left:25px;
+ 	padding: 20px;
+ }
