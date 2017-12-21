@@ -10,14 +10,14 @@
 			  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myupdatepost_<%= post.id %>">
 				Edit	
 			  </button>
-			  <%= link_to "Destroy", post, method: :delete, class: "btn btn-danger" %>
+			  <%= link_to "Destroy", post, method: :delete, class: "btn btn-danger", remote: true %>
 			</div>
 		</div>
 	</div>
 </div>
 
 
-<%= form_for(post, :method => :put) do |f| %>
+<%= form_for(post, :method => :put, remote: true) do |f| %>
 	<div class="modal fade" id="myupdatepost_<%= post.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<% if @post.errors.any? %>
 		    <div id="error_explanation">
