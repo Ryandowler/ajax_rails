@@ -16,7 +16,6 @@
 	</div>
 </div>
 
-
 <%= form_for(post, :method => :put, remote: true) do |f| %>
 	<div class="modal fade" id="myupdatepost_<%= post.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<% if @post.errors.any? %>
